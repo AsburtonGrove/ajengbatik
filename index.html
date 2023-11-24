@@ -922,7 +922,6 @@ function addToCart(productName, productPrice, productImage) {
     if (existingProductIndex !== -1) {
         // If the product is already in the cart, double the price
         shoppingCart[existingProductIndex].quantity += 1;
-        shoppingCart[existingProductIndex].price *= 2;
     } else {
         // If the product is not in the cart, add it
         shoppingCart.push(product);
