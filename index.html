@@ -1,0 +1,1113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- vanilla css  -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- google fonts  -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+<link rel="icon" type="image/png" href="/img/favicon.png">
+    <!-- google icons -->
+    <title>Ajeng Batik | Surakarta</title>
+</head>
+<body>
+ <!-- Header Section -->
+ <div class="header">
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">AjengBatik</div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#produk">Produk</a></li>
+                    <li><a href="#kontak">Kontak</a></li>
+                    <li><a href="#testimoni">Testimoni</a></li>
+                </ul>
+            </nav>
+            <a href="#">
+                <i class="fa fa-shopping-cart fa-lg" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="updateCartModal()">Cart</i>
+            </a>
+            <img src="img/menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+        <div class="row">
+            <div class="col-2">
+                <h1>Ayo Bangga Pakai Batik<br>Nusantara!</h1>
+                <p>Ini batikku, mana batikmu? Jangan pernah merasa malu<br> untuk mengenakan warisan budaya negeri sendiri. Banggalah dan perkenalkan batik Indonesia kepada dunia.</p>
+                <a href="#produk" class="btn">&#8594; Jelajahi Sekarang &#8592;</a>
+            </div>
+            <div class="col-2">
+                <img src="img/kisspng-stock-photography-woman-kebaya-clothing-thailand-5ac83de03ebf05.389232851523072480257.png" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Header Section -->
+
+<!-- Product Section -->
+<div class="small-container" id="produk">
+    <h2 class="title" style="margin-top: 50px;">Fitur Produk</h2>
+    <div class="row">
+        <div class="col-4">
+            <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                <img src="img/IMG_4771.png">
+            </a>
+            <h4>Outer Tanpa Lengan</h4>
+            <div class="rating">
+                <span class="material-symbols-outlined">
+                    star
+                </span>
+                <span class="material-symbols-outlined">
+                    star
+                </span>
+                <span class="material-symbols-outlined">
+                    star
+                </span>
+                <span class="material-symbols-outlined">
+                    star
+                </span>
+                <span class="material-symbols-outlined">
+                    star_half
+                </span>
+            </div>
+            <p>Rp.70.000</p>
+            <button onclick="addToCart('Outer Tanpa Lengan', 70000, 'img/IMG_4771.png')" class="btn">Add to Cart</button>
+        </div>
+
+        <div class="col-4">
+            <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                <img src="img/mukenacapbatik.jpeg">
+            </a>
+            <h4>Mukena Cap Batik</h4>
+            <div class="rating">
+                <span class="material-symbols-outlined">
+                    star
+                </span>
+                <span class="material-symbols-outlined">
+                    star
+                </span>
+                <span class="material-symbols-outlined">
+                    star
+                </span>
+                <span class="material-symbols-outlined">
+                    star
+                </span>
+                <span class="material-symbols-outlined">
+                    star
+                </span>
+            </div>
+            <p>Rp.150.000</p>
+            <button onclick="addToCart('Mukena Cap Batik', 150000, 'img/mukenacapbatik.jpeg')" class="btn">Add to Cart</button>
+        </div>
+        <div class="col-4">
+            <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal3"><img src="img/kardingantanpalengan.jpeg"></a>
+            <h4>Kardingan Tanpa Lengan</h4>
+            <div class="rating">
+                <span class="material-symbols-outlined">
+                    star
+                    </span>
+                <span class="material-symbols-outlined">
+                    star
+                    </span>
+                <span class="material-symbols-outlined">
+                    star
+                    </span>
+                <span class="material-symbols-outlined">
+                    star
+                    </span>
+                    <span class="material-symbols-outlined">
+                        star
+                        </span>
+            </div>
+            <p>Rp.65.000</p>
+            <button onclick="addToCart('Kardingan Tanpa Lengan', 65000, 'img/kardingantanpalengan.jpeg')" class="btn">Add to Cart</button>
+        </div>
+        <div class="col-4">
+            <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal4"><img src="img/cardiganpanjang.jpeg"></a>
+            <h4>Cardigan Panjang</h4>
+            <div class="rating">
+                <span class="material-symbols-outlined">
+                    star
+                    </span>
+                <span class="material-symbols-outlined">
+                    star
+                    </span>
+                <span class="material-symbols-outlined">
+                    star
+                    </span>
+                <span class="material-symbols-outlined">
+                    star
+                    </span>
+                    <span class="material-symbols-outlined">
+                        star
+                        </span>
+            </div>
+            <p>Rp.65.000</p>
+            <button onclick="addToCart('Cardigan Panjang', 65000, 'img/cardiganpanjang.jpeg')" class="btn">Add to Cart</button>
+        </div>
+        <div class="col-4">
+            <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal5"><img src="img/blusjumbo.jpeg"></a>
+            <h4>Blus Jumbo</h4>
+            <div class="rating">
+                <span class="material-symbols-outlined">
+                    star
+                    </span>
+                <span class="material-symbols-outlined">
+                    star
+                    </span>
+                <span class="material-symbols-outlined">
+                    star
+                    </span>
+                <span class="material-symbols-outlined">
+                    star
+                    </span>
+                    <span class="material-symbols-outlined">
+                        star
+                        </span>
+            </div>
+            <p>Rp.60.000</p>
+            <button onclick="addToCart('Blus Jumbo', 60000, 'img/blusjumbo.jpeg')" class="btn">Add to Cart</button>
+        </div>
+        <div class="col-4">
+            <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal6"><img src="img/blus45k.jpeg"></a>
+            <h4>Blus Corak Hitam</h4>
+            <div class="rating">
+                <span class="material-symbols-outlined">
+                    star
+                    </span>
+                <span class="material-symbols-outlined">
+                    star
+                    </span>
+                <span class="material-symbols-outlined">
+                    star
+                    </span>
+                <span class="material-symbols-outlined">
+                    star
+                    </span>
+                    <span class="material-symbols-outlined">
+                        star
+                        </span>
+            </div>
+            <p>Rp.45.000</p>
+            <button onclick="addToCart('Blus Corak Hitam', 45000, 'img/blus45k.jpeg')" class="btn">Add to Cart</button>
+        </div>
+        <div class="col-4">
+            <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal7"><img src="img/outertanpalengan(soft).jpeg"></a>
+            <h4>Outer Tanpa Lengan (Soft)</h4>
+            <div class="rating">
+                <span class="material-symbols-outlined">
+                    star
+                    </span>
+                <span class="material-symbols-outlined">
+                    star
+                    </span>
+                <span class="material-symbols-outlined">
+                    star
+                    </span>
+                <span class="material-symbols-outlined">
+                    star
+                    </span>
+                    <span class="material-symbols-outlined">
+                        star
+                        </span>
+            </div>
+            <p>Rp.75.000</p>
+            <button onclick="addToCart('Outer Tanpa Lengan (Soft)', 75000, 'img/outertanpalengan(soft).jpeg')" class="btn">Add to Cart</button>
+        </div>
+        <div class="col-4">
+            <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal8"><img src="img/IMG_4777.png"></a>
+            <h4>Blus Corak Merah</h4>
+            <div class="rating">
+                <span class="material-symbols-outlined">
+                    star
+                    </span>
+                <span class="material-symbols-outlined">
+                    star
+                    </span>
+                <span class="material-symbols-outlined">
+                    star
+                    </span>
+                <span class="material-symbols-outlined">
+                    star
+                    </span>
+                <span class="material-symbols-outlined">
+                    star
+                    </span>
+                    
+            </div>
+            <p>Rp.75.000</p>
+            <button onclick="addToCart('Blus Corak Merah.', 75000, 'img/IMG_4777.png')" class="btn">Add to Cart</button>
+        </div>
+    </div>
+</div>
+<!-- End Product Section -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Cart Detail</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                
+                <div id="cartContents">
+                    <!-- Cart contents will be displayed here -->
+                </div>
+                <div class="total-price" style="display: none;">
+                    
+                    <table style="float: right;">
+                        <tr>
+                            <td>Total</td>
+                            <td id="total_value"><span id="total">0</span></td>
+                        </tr>
+                    </table>
+                    <p class="bank">Pembayaran melalui Bank BNI 713127790 - Shinta Retno Suri.</p>
+                    <!-- <a href="https://wa.me/+6281510176108?text=Hallo%20kak%20saya%20ingin%20beli%20produk%20kakak,%20apakah%20masih%20tersedia?"><img src="img/WhatsApp.png" alt="" width="50px"></a> -->
+                </div>
+            </div>
+            <form class="form" method="post" id="checkoutForm" style="display: none;" onsubmit="return validateForm();">
+                <h3>Billing Details</h3>
+                <div class="form-group row">
+                    <label for="nama" class="col-sm-2 col-form-label">Nama Lengkap</label>
+                    <div class="col-sm-10">
+                        <input type="text" id="nama" name="nama" class="form-control" required>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="alamat" class="col-sm-2 col-form-label">Alamat</label>
+                    <div class="col-sm-10">
+                        <input type="text" id="alamat" name="alamat" class="form-control" required>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="noHp" class="col-sm-2 col-form-label">Nomor Handphone</label>
+                    <div class="col-sm-10">
+                        <input type="number" id="noHp" name="noHp" class="form-control" required>
+                    </div>
+                </div>
+                <p>Jika tidak melakukan pembayaran selama 2 hari maka pembelian dibatalkan</p>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <a href="pembayaran.html"><button type="submit" class="btn btn-primary" id="Checkout">Checkout</button></a>
+              </div>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModal1Label" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModal1Label">Product Detail</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div class="small-container single-product">
+                <div class="row">
+                    <div class="col-3">
+                        <img src="img/IMG_4771.png" width="100%">
+                        <div class="small-img-row">
+                            <div class="small-img-col">
+                                <img src="img/IMG_4771.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-2 product-left">
+                        <p>Home/ Batik</p>
+                        <h1>Outer Tanpa Lengan</h1>
+                        <h4>Rp.70.000</h4>
+                        
+                        <input type="number" value="1">
+                        <button onclick="addToCart('Outer Tanpa Lengan', 70000, 'img/IMG_4771.png')" class="btn">Add to Cart</button>
+                        <h3>Product Details<i class="fa fa-indent"></i></h3>
+                        <br>
+                        <p>Kondisi: Baru</p>
+                            <p>Min. Pemesanan: 1 Buah</p>
+                            <p>Etalase: outer</p>
+                            <p>outerwear ini terbuat dari bahan premium import yang karakteristiknya soft, bahan jatuh dan tidak kaku.</p>
+                            <p>ukuran :</p>
+                            <p>LD : 110 cm ( M Fit to XXL )</p>
+                            <p>panjang : 67 cm ( diambil dari badan belakang )</p>
+                            <p>cocok digunakan pada acara formal maupun casual</p>
+                    </div>
+                </div>
+            </div>
+                
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <a href="#"><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Checkout</button></a>
+              </div>
+        </div>
+        
+      </div>
+    </div>
+<div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModal2Label" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModal2Label">Product Detail</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div class="small-container single-product">
+                <div class="row">
+                    <div class="col-3">
+                        <img src="img/mukenacapbatik.jpeg" alt="">
+                        <div class="small-img-row">
+                            <div class="small-img-col">
+                                <img src="img/mukenacapbatik.jpeg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-2 product-left">
+                        <p>Home/ Batik</p>
+                        <h1>Mukena Cap Batik</h1>
+                        <h4>Rp.150.000</h4>
+                        
+                        <input type="number" value="1">
+                        <button onclick="addToCart('Mukena Cap Batik', 150000, 'img/mukenacapbatik.jpeg')" class="btn">Add to Cart</button>
+                        <h3>Product Details<i class="fa fa-indent"></i></h3>
+                        <br>
+                        <p>Kondisi: Baru</p>
+                            <p>Min. Pemesanan: 1 Buah</p>
+                            <p>Etalase: Mukena</p>
+                            <p>READY STOK MUKENA CAP BATIK
+                            Mukena Cap Encim Batik Warna Soft</p>
+                            
+                            <p>Bahan : santung samitex
+                            adem,halus dan nyaman dipakai,tidak nerawang
+                            batik cap handmade </p>
+                    </div>
+                </div>  
+            </div>
+                
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <a href="#"><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Checkout</button></a>
+              </div>
+        </div>
+        
+      </div>
+    </div>
+    <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModal3Label" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModal3Label">Product Detail</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="small-container single-product">
+                    <div class="row">
+                        <div class="col-3">
+                            <img src="img/kardingantanpalengan.jpeg" width="100%">
+                            <div class="small-img-row">
+                                <div class="small-img-col">
+                                    <img src="img/kardingantanpalengan.jpeg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-2 product-left">
+                            <p>Home/ Batik</p>
+                            <h1>Kardingan Tanpa Lengan</h1>
+                            <h4>Rp.65.000</h4>
+                            
+                            <input type="number" value="1">
+                            <button onclick="addToCart('Kardingan Tanpa Lengan', 65000, 'img/kardingantanpalengan.jpeg')" class="btn">Add to Cart</button>
+                            <h3>Product Details<i class="fa fa-indent"></i></h3>
+                            <br>
+                            <p>Kondisi: Baru</p>
+                                <p>Min. Pemesanan: 1 Buah</p>
+                                <p>Etalase: OUTER WANITA</p>
+                                <br>
+                                <p>FREE SIZE FIT TO XL</p>
+                                <p>BAHAN : Katun</p>
+                                <p>Motif : Batik</p>
+                                <p>Panjang = 102 cm</p>
+                                <p>LD: 98-110 cm</p>
+                                <p>LL: 54 cm</p>
+                                <p>PL: 58 cm</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <a href="#"><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Checkout</button></a>
+                  </div>
+                    
+                </div>
+            </div>
+            
+          </div>
+        </div>
+    <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModal4Label" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModal4Label">Product Detail</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="small-container single-product">
+                    <div class="row">
+                        <div class="col-3">
+                            <img src="img/cardiganpanjang.jpeg">
+                            <div class="small-img-row">
+                                <div class="small-img-col">
+                                    <img src="img/cardiganpanjang.jpeg">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-2 product-left">
+                            <p>Home/ Batik</p>
+                            <h1>Cardigan Panjang</h1>
+                            <h4>Rp.65.000</h4>
+                            
+                            <input type="number" value="1">
+                            <button onclick="addToCart('Cardigan Panjang', 65000, 'img/cardiganpanjang.jpeg')" class="btn">Add to Cart</button>
+                            <h3>Product Details<i class="fa fa-indent"></i></h3>
+                            <br>
+                            <p>Kondisi: Baru</p>
+                                <p>Min. Pemesanan: 1 Buah</p>
+                                <p>Motif: Cetak Grafis</p>
+                                <p>Bahan Pakaian: Kapas</p>
+                        </div>
+                    </div>
+                </div>
+                    
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <a href="#"><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Checkout</button></a>
+                  </div>
+            </div>
+            
+          </div>
+        </div>
+    <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModal5Label" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModal5Label">Product Detail</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="small-container single-product">
+                    <div class="row">
+                        <div class="col-3">
+                            <img src="img/blusjumbo.jpeg">
+                            <div class="small-img-row">
+                                <div class="small-img-col">
+                                    <img src="img/blusjumbo.jpeg">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-2 product-left">
+                            <p>Home/ Batik</p>
+                            <h1>Blus Jumbo</h1>
+                            <h4>Rp.60.000</h4>
+                            
+                            <input type="number" value="1">
+                            <button onclick="addToCart('Blus Jumbo', 60000, 'img/blusjumbo.jpeg')" class="btn">Add to Cart</button>
+                            <h3>Product Details<i class="fa fa-indent"></i></h3>
+                            <br>
+                            <p>Kondisi: Baru</p>
+                                <p>Min. Pemesanan: 1 Buah</p>
+                                <p>Kategori : Kemeja,Blouse</p>
+                                <p>Bahan Pakaian: Katun</p>
+                                <p>Kancing depan sampai bawah</p>
+                                <p>Lengan panjang</p>
+    
+                        </div>
+                    </div>
+                </div>
+                    
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <a href="#"><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Checkout</button></a>
+                  </div>
+            </div>
+            
+          </div>
+        </div>
+    <div class="modal fade" id="exampleModal6" tabindex="-1" aria-labelledby="exampleModal6Label" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModal6Label">Product Detail</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="small-container single-product">
+                    <div class="row">
+                        <div class="col-3">
+                            <img src="img/blus45k.jpeg">
+                            <div class="small-img-row">
+                                <div class="small-img-col">
+                                    <img src="img/blus45k.jpeg">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-2 product-left">
+                            <p>Home/ Batik</p>
+                            <h1>Blus Corak Hitam</h1>
+                            <h4>Rp.45.000</h4>
+                            
+                            <input type="number" value="1">
+                            <button onclick="addToCart('Blus Corak Hitam', 45000, 'img/blus45k.jpeg')" class="btn">Add to Cart</button>
+                            <h3>Product Details<i class="fa fa-indent"></i></h3>
+                            <br>
+                            <p>Kondisi: Baru</p>
+                                <p>Min. Pemesanan: 1 Buah</p>
+                                <p>Kategori : Kemeja,Blouse</p>
+                                <p>Bahan Pakaian: Katun</p>
+                                <p>Lebar dada 58 cm Panjang 98 cm</p>
+                                <p>lingkar dada = 2 x lebar dada</p>
+                        </div>
+                    </div>
+                </div>
+                    
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <a href="#"><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Checkout</button></a>
+                  </div>
+            </div>
+          </div>
+        </div>
+    <div class="modal fade" id="exampleModal7" tabindex="-1" aria-labelledby="exampleModal7Label" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModal7Label">Product Detail</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="small-container single-product">
+                    <div class="row">
+                        <div class="col-3">
+                            <img src="img/outertanpalengan(soft).jpeg">
+                            <div class="small-img-row">
+                                <div class="small-img-col">
+                                    <img src="img/outertanpalengan(soft).jpeg">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-2 product-left">
+                            <p>Home/ Batik</p>
+                            <h1>Outer Tanpa Lengan (Soft)</h1>
+                            <h4>Rp.75.000</h4>
+                            
+                            <input type="number" value="1">
+                            <button onclick="addToCart('Outer Tanpa Lengan (Soft)', 75000, 'img/outertanpalengan(soft).jpeg')" class="btn" >Add to Cart</button>
+                            <h3>Product Details<i class="fa fa-indent"></i></h3>
+                            <br>
+                            <p>Kondisi: Baru</p>
+                                <p>Min. Pemesanan: 1 Buah</p>
+                                <p>Motif : Batik</p>
+                                <p>Bahan Pakaian: Katun</p>
+                                <p>Kerah V</p>
+                                <p>Tidak Transparan, Ringan, tidak melar.</p>
+                                <p>Allsize</p>
+                                <p>Lingkar Dada : 120cm</p>
+                                <p>Panjang Outer : 110cm</p>
+                        </div>
+                    </div>
+                </div>
+                    
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <a href="#"><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Checkout</button></a>
+                  </div>
+            </div>
+            
+          </div>
+        </div>
+    <div class="modal fade" id="exampleModal8" tabindex="-1" aria-labelledby="exampleModal8Label" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModal8Label">Product Detail</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="small-container single-product">
+                    <div class="row">
+                        <div class="col-3">
+                            <img src="img/IMG_4777.png">
+                            <div class="small-img-row">
+                                <div class="small-img-col">
+                                    <img src="img/IMG_4777.png">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-2 product-left">
+                            <p>Home/ Batik</p>
+                            <h1>Blus Corak Merah</h1>
+                            <h4>Rp.75.000</h4>
+                            
+                            <input type="number" value="1">
+                            <button onclick="addToCart('Blus Corak Merah', 75000, 'img/IMG_4777.png')" class="btn">Add to Cart</button>
+                            <h3>Product Details<i class="fa fa-indent"></i></h3>
+                            <br>
+                            <p>Kondisi: Baru</p>
+                                <p>Min. Pemesanan: 1 Buah</p>
+                                <p>Motif : Batik</p>
+                                <p>Bahan Pakaian: Katun Halus</p>
+                                <p>Panjang Blus 65 Cm</p>
+                                <p>Tidak Transparan, Ringan, tidak melar.</p>
+                                <p>Allsize</p>
+                                <p>Lingkar Dada : 110cm</p>
+                        </div>
+                    </div>
+                </div>
+                    
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <a href="#"><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Checkout</button></a>
+                  </div>
+            </div>
+            
+          </div>
+        </div>
+  </div>
+<!-- end fitur produk -->
+<!-- offer  -->
+<div class="offer">
+    <div class="small-container">
+        <div class="row">
+            <div class="col-2">
+                <img src="img/IMG_4777.png" class="offer-img">
+            </div>
+            <div class="col-2">
+                <p>Batik Ekslusif tersedia di Shopee, Tokopedia, Okoceyouth</p>
+                <h1>Blus Corak Merah</h1>
+                <small>Batik Wanita ini adalah hasil karya dari masyarakat surakarta yang melukis batik menggunakan canting yang telah diisi lilin cair untuk mencorakkan kain. Setelah 4 jam merendam kain dalam bahan tersebut, kain tersebut dibasuh dan direbus</small>
+                <br>
+                <button onclick="addToCart('Blus Corak Merah', 75000, 'img/IMG_4777.png')" class="btn">Beli sekarang &#8594;</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end offer  -->
+<!-- testimonial -->
+<div class="testimonial" id="testimoni">
+    <div class="small-container">
+        <div class="row">
+            <div class="col-3">
+                <span class="edit material-symbols-outlined">
+                    format_quote
+                    </span>
+                <p>Lokasi mudah dicari, produk yang dijual berkualitas tinggi dan harga murah</p>
+                <div class="rating">
+                    <span class="material-symbols-outlined">
+                        star
+                        </span>
+                    <span class="material-symbols-outlined">
+                        star
+                        </span>
+                    <span class="material-symbols-outlined">
+                        star
+                        </span>
+                    <span class="material-symbols-outlined">
+                        star
+                        </span>
+                        <span class="material-symbols-outlined">
+                            star
+                        </span>
+                        </div>
+                        <img src="img/caca.png">
+                        <h3>Tarysha Aulya Putri Rany</h3>
+                </div>
+            <div class="col-3">
+                <span class="edit material-symbols-outlined">
+                    format_quote
+                    </span>
+                <p>bahannya ademm</p>
+                <div class="rating">
+                    <span class="material-symbols-outlined">
+                        star
+                        </span>
+                    <span class="material-symbols-outlined">
+                        star
+                        </span>
+                    <span class="material-symbols-outlined">
+                        star
+                        </span>
+                    <span class="material-symbols-outlined">
+                        star
+                        </span>
+                        <span class="material-symbols-outlined">
+                            star
+                        </span>
+                        </div>
+                        <img src="img/mail.png">
+                        <h3>Ismail Dwi Nugroho</h3>
+                </div>
+            <div class="col-3">
+                <span class="edit material-symbols-outlined">
+                    format_quote
+                    </span>
+                <p>Batik nya lengkap, banyak model, dan harganya murah</p>
+                <div class="rating">
+                    <span class="material-symbols-outlined">
+                        star
+                        </span>
+                    <span class="material-symbols-outlined">
+                        star
+                        </span>
+                    <span class="material-symbols-outlined">
+                        star
+                        </span>
+                    <span class="material-symbols-outlined">
+                        star
+                        </span>
+                        <span class="material-symbols-outlined">
+                            star
+                        </span>
+                        </div>
+                        <img src="img/opal.png">
+                        <h3>Muhamad Naufal Hudha</h3>
+                </div>
+            <div class="col-3">
+                <span class="edit material-symbols-outlined">
+                    format_quote
+                    </span>
+                <p>kualitasnya baik, pelayanan sudah maksimal dan sangat manusiawi, harganya juga cocok di kantong</p>
+                <div class="rating">
+                    <span class="material-symbols-outlined">
+                        star
+                        </span>
+                    <span class="material-symbols-outlined">
+                        star
+                        </span>
+                    <span class="material-symbols-outlined">
+                        star
+                        </span>
+                    <span class="material-symbols-outlined">
+                        star
+                        </span>
+                        <span class="material-symbols-outlined">
+                            star
+                        </span>
+                        </div>
+                        <img src="img/diaz.png">
+                        <h3>Diaz Cahyantoro</h3>
+                </div>
+            <div class="col-3">
+                <span class="edit material-symbols-outlined">
+                    format_quote
+                    </span>
+                <p>Kualitas ok , bahan adem , harga murah</p>
+                <div class="rating">
+                    <span class="material-symbols-outlined">
+                        star
+                        </span>
+                    <span class="material-symbols-outlined">
+                        star
+                        </span>
+                    <span class="material-symbols-outlined">
+                        star
+                        </span>
+                    <span class="material-symbols-outlined">
+                        star
+                        </span>
+                        <span class="material-symbols-outlined">
+                            star
+                        </span>
+                    </div>
+                    <br>
+                        <img src="img/himawan.png">
+                        <h3>Himawan mukceli</h3>
+                    </div>
+            <div class="col-3">
+                <span class="edit material-symbols-outlined">
+                    format_quote
+                    </span>
+                <p>bajunya berkualitas</p>
+                <div class="rating">
+                    <span class="material-symbols-outlined">
+                        star
+                        </span>
+                    <span class="material-symbols-outlined">
+                        star
+                        </span>
+                    <span class="material-symbols-outlined">
+                        star
+                        </span>
+                    <span class="material-symbols-outlined">
+                        star
+                        </span>
+                        <span class="material-symbols-outlined">
+                            star
+                        </span>
+                    </div>
+                    <br>
+                        <img src="img/savana.png">
+                        <h3>Savana Amalia</h3>
+                </div>
+        </div>
+    </div>
+</div>
+<!-- end testimonial -->
+<!-- footer  -->
+<div class="footer" id="kontak">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Kunjungi Marketplace kami</h3>
+                <p>Tersedia di Tokopedia,Shopee,OKOCEyouth</p>
+                <div class="app-logo">
+                    <img src="img/tokopedia-38854.png" alt="Tokopedia">
+                    <img src="img/shopee-logo-40482.png" alt="Shopee">
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <div class="logo">AjengBatik Surakarta</div>
+                <p>Tujuan Ajeng Batik adalah untuk memberikan pelayanan yang bagus dan juga bisa tetap melestarikan batik budaya Indonesia.</p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Link AjengBatik</h3>
+                <ul>
+                    <li><a href="#"> Kupon</a></li>
+                    <li><a href="#"> Blog Post</a></li>
+                    <li><a href="#"> Menjadi Member</a></li>
+                    <li><a href="https://www.google.com/search?q=ajeng%20batik%20solo&oq=ajeng+batik+solo&aqs=chrome..69i57j69i60l3.2511j0j4&sourceid=chrome&ie=UTF-8&tbs=lrf:!1m4!1u3!2m2!3m1!1e1!1m4!1u2!2m2!2m1!1e1!2m1!1e2!2m1!1e3,lf:1&tbm=lcl&sxsrf=ALiCzsbNCwqf5DiDkSC89yU0nfKG_fBezg:1654857674088&rflfq=1&num=10&rldimm=2123638577510495016&lqi=ChBhamVuZyBiYXRpayBzb2xvSM7uu8rMj4CACFogEAAQARgAGAEYAiIQYWplbmcgYmF0aWsgc29sbzICaWSSAQ5jbG90aGluZ19zdG9yZZoBJENoZERTVWhOTUc5blMwVkpRMEZuU1VReWJqZG1RamxuUlJBQg&phdesc=A6qhWrUlmAE&ved=2ahUKEwiKk8We2aL4AhU1RmwGHRINCVYQvS56BAgCEAE&sa=X&rlst=f#rlfi=hd:;si:2123638577510495016,l,ChBhamVuZyBiYXRpayBzb2xvSM7uu8rMj4CACFogEAAQARgAGAEYAiIQYWplbmcgYmF0aWsgc29sbzICaWSSAQ5jbG90aGluZ19zdG9yZZoBJENoZERTVWhOTUc5blMwVkpRMEZuU1VReWJqZG1RamxuUlJBQg,y,A6qhWrUlmAE;mv:[[-7.5435719,110.83967949999999],[-7.5848089,110.77395519999999]];tbs:lrf:!1m4!1u3!2m2!3m1!1e1!1m4!1u2!2m2!2m1!1e1!2m1!1e2!2m1!1e3,lf:1"> Lokasi Kami</a></li>
+                </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Ikuti Kami</h3>
+                <ul>
+                    <li><a href="https://instagram.com/ajengbatik_"> Instagram</a></li>
+                    <li><a href="https://shopee.co.id/ajengbatik_solo"> Shopee</a></li>
+                    <li><a href="https://tokopedia.com/ajengbatik"> Tokopedia</a> </li>
+                    <li><a href="https://toko.okoceyouth.com"> Okoceyouth</a></li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">Copyright 2023 - Ajeng Batik Surakarta</p>
+    </div>
+</div>
+<!-- end footer  -->
+<!-- js untuk toggle menu -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script>
+    
+    var shoppingCart = [];
+
+function addToCart(productName, productPrice, productImage) {
+    var product = {
+        name: productName,
+        price: productPrice,
+        image: productImage,
+        quantity: 1 // Default quantity is 1
+    };
+    // Check if the product is already in the cart
+    var existingProductIndex = shoppingCart.findIndex(item => item.name === productName);
+
+    if (existingProductIndex !== -1) {
+        // If the product is already in the cart, double the price
+        shoppingCart[existingProductIndex].quantity += 1;
+        shoppingCart[existingProductIndex].price *= 2;
+    } else {
+        // If the product is not in the cart, add it
+        shoppingCart.push(product);
+    }
+
+    // Update the cart display in the navigation bar
+    updateCartDisplay();
+    alert("Produk berhasil ditambahkan ke Keranjang!");
+    // Update the cart contents in the "Product Detail" modal
+    updateCartModal();
+}
+
+
+function updateCartDisplay() {
+    var cartItemCount = shoppingCart.length;
+    var cartIcon = document.querySelector(".fa-shopping-cart");
+    cartIcon.innerHTML = cartItemCount;
+
+    // Check if the cart is empty and hide/show elements accordingly
+    var totalAndForm = document.querySelector(".total-price, .form");
+    if (cartItemCount === 0) {
+        totalAndForm.style.display = "none";
+    } else {
+        totalAndForm.style.display = "block";
+    }
+}
+
+function updateCartModal() {
+    var cartContentsDiv = document.getElementById("cartContents");
+    var totalValueSpan = document.getElementById("total_value");
+    cartContentsDiv.innerHTML = ''; // Clear the previous cart contents
+    var totalValue = 0; // Inisialisasi total
+
+    if (shoppingCart.length === 0) {
+        cartContentsDiv.innerHTML = "<p>Your cart is empty.</p>";
+        // Hide the total-price and form elements if the cart is empty
+        document.querySelector(".total-price").style.display = "none";
+        document.querySelector(".form").style.display = "none";
+    } else {
+        // Show the total-price and form elements
+        document.querySelector(".total-price").style.display = "block";
+        document.querySelector(".form").style.display = "block";
+        var table = document.createElement("table");
+        table.innerHTML = `
+            <tr>
+                <th>Product</th>
+                <th>Quantity</th>
+                <th>Subtotal</th>
+            </tr>
+        `;
+        for (var i = 0; i < shoppingCart.length; i++) {
+            var cartItem = shoppingCart[i];
+            var itemDiv = document.createElement("tr");
+            var subtotal = cartItem.price * cartItem.quantity; // Hitung subtotal
+            totalValue += subtotal; // Tambahkan subtotal ke total
+            itemDiv.innerHTML = `
+                <td>
+                    <div class="cart-info">
+                        <img src="${cartItem.image}" alt="${cartItem.name}" width="20%">
+                        <div>
+                            <p>${cartItem.name}</p>
+                            <small>Harga : ${cartItem.price}</small>
+                            <br>
+                            <a href="javascript:void(0);" onclick="removeProduct(${i})">Remove</a>
+                        </div>
+                    </div>
+                </td>
+                <td class="number-edit">
+                    <input type="number" value="${cartItem.quantity}" id="quantity${i}" onchange="updateQuantity(${i})">
+                </td>
+                <td>Rp.${subtotal}</td>
+            `;
+            table.appendChild(itemDiv);
+        }
+        cartContentsDiv.appendChild(table);
+        totalValueSpan.textContent = "Rp." + totalValue; 
+    }
+}
+
+    var MenuItems = document.getElementById("MenuItems");
+
+    MenuItems.style.maxHeight = "0px";
+
+    function menutoggle() {
+        if(MenuItems.style.maxHeight == "0px")
+        {
+            MenuItems.style.maxHeight = "200px";
+        }else {
+            MenuItems.style.maxHeight = "0px";
+        }
+    }
+    // Fungsi untuk mengubah jumlah produk dan memperbarui subtotal
+function updateQuantity(index) {
+    var inputElement = document.getElementById(`quantity${index}`);
+    var newQuantity = parseInt(inputElement.value);
+    if (newQuantity >= 1) {
+        shoppingCart[index].quantity = newQuantity;
+        updateCartModal(); // Perbarui tampilan modal setelah mengubah jumlah
+    }else {
+        inputElement.value = 1;
+    }
+}
+
+function tampilkanAlert() {
+    // Validate the form before proceeding
+    if (!validateForm()) {
+        return;
+    }
+    // Assuming 'shoppingCart' is your JavaScript array containing selected products
+    var formData = {
+        nama: document.getElementById('nama').value,
+        alamat: document.getElementById('alamat').value,
+        noHp: document.getElementById('noHp').value,
+        shoppingCart: shoppingCart
+    };
+
+    // Send data to the server using AJAX
+    fetch('connect.php', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+    })
+    .then(response => response.json())
+    .then(data => {
+        // Handle the response from the server
+        if (data.success) {
+            // Redirect to payment page with the user_id parameter
+            window.location.href = 'pembayaran.php?id=' + data.user_id;
+            alert("Data berhasil Disimpan ke dalam database.");
+        } else {
+            // Handle error scenario
+            console.error(data.error);
+            // Optionally, display an error message to the user
+        }
+    })
+    .catch(error => console.error('Error:', error));
+}
+
+
+        // Menambahkan event listener ke tombol
+        document.getElementById("Checkout").addEventListener("click", function(event) {
+            event.preventDefault();
+            tampilkanAlert();
+        });
+        
+        function removeProduct(index) {
+        var confirmation = confirm("Apakah anda yakin ingin menghapus produk ini?");
+        if (confirmation) {
+            var removeProduct = shoppingCart[index];
+            shoppingCart.splice(index, 1); // Remove the product from the cart
+            updateCartModal(); // Update the cart display
+
+            // Recalculate the total price
+            var totalValue = 0;
+            for(var i = 0; i < shoppingCart.length; i++){
+                totalValue += shoppingCart[i].price * shoppingCart[i].quantity;
+            }
+
+            // Update the total price display
+            var totalValueSpan = document.getElementById("total_value");
+            totalValueSpan.textContent = "Rp." + totalValue;
+            
+            // Update the cart item count
+            var cartItemCount = shoppingCart.length;
+            var cartIcon = document.querySelector(".fa-shopping-cart");
+            cartIcon.textContent = cartItemCount;
+        }
+    }
+
+    function validateForm() {
+    var nama = document.getElementById('nama').value;
+    var alamat = document.getElementById('alamat').value;
+    var noHp = document.getElementById('noHp').value;
+
+    if (nama === '' || alamat === '' || noHp === '') {
+        alert("Harap isi semua kolom yang diperlukan.");
+        return false;
+    }
+
+    return true;
+}
+
+
+</script>
+</body>
+</html>
